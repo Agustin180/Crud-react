@@ -1,0 +1,91 @@
+:root{
+  --primary-color: #082032;
+  --secondary-color: #5A5A5A;
+  --third-color: #DADADA;
+    background-color: rgb(19, 146, 250);
+}
+
+.App {
+  margin: 0 auto;
+  padding: 0;
+}
+
+#app_title{
+  justify-items: center;
+  display: grid;
+  font-size: 3rem;
+}
+
+.general_content{
+  width: 50%;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+}
+
+.general-add{
+  width: min-content;
+}
+
+.general-title{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.general-subtitle{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--third-color);
+  padding: 10px;
+  overflow: hidden;
+  max-width: 100px;
+}
+
+.general-button{
+  font-size: 1rem;
+  background-color: turquoise;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin: 5px;
+}
+
+.general-button{
+  color: var(--primary-color);
+  font-size: 20px;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: rgb(50, 120, 167);
+}
+
+.general-button:hover{
+  background-color: rgb(69, 149, 202);
+
+}
+
+.general-input{
+  border-radius: 10px;
+  background-color:rgb(96, 189, 192);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.general-users{
+  width: max-content;
+  border: solid 5px rgb(21, 58, 93);
+  padding: 5px;
+  border-radius: 20px;
+}
+
+
+
+#name, #username{
+  height: 20px;
+  margin: 5px 0px 5px 0px;
+}
+
+@media screen and (max-width: 930px){
+  .general_content{
+  grid-template-columns: repeat(1, 1fr);
+}
+}
